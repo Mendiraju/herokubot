@@ -1,0 +1,7 @@
+python-telegram-bot>=20.3
+aiosqlite
+python-dotenv
+fastapi
+uvicorn[standard]
+prometheus_client
+sentry-sdk

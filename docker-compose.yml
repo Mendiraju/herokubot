@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  bot:
+    build: .
+    environment:
+      - BOT_TOKEN
+      - OWNER_ID
+      - SUPPORT_ADMINS
+      - DB_FILE=otp_bot.db
+      - UPI_ID
+      - SUPPORT_URL
+      - OTP_PRICE
+      - OTP_PAYOUT
+      - OTP_TIMEOUT_MINUTES
+    volumes:
+      - .:/app
+    restart: unless-stopped
